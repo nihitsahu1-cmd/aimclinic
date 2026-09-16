@@ -51,7 +51,7 @@ function Hero() {
           {/* Right Side */}
           <div className="col-lg-6 text-center mt-5 mt-lg-0">
             <div className="hero-image-box slide-up">
-              <img src="/hero1.jpg" alt="Doctor providing a patient consultation" />
+              <img src="patient1.jpg" alt="Doctor providing a patient consultation" />
               <div className="hero-trust-card">
                 <i className="bi bi-heart-pulse-fill"></i>
                 <span><strong>Patient-first care</strong><small>Here when you need us</small></span>

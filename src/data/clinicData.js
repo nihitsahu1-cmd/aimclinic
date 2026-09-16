@@ -6,12 +6,12 @@ const clinicData = {
     "AIM Multispeciality Clinic provides quality healthcare with experienced doctors, modern facilities and patient-focused care.",
 
   // Contact Information
-  phone: "9506012020",
-  alternatePhone: "8874797293",
+  phone: "7266903708",
+  alternatePhone: "6387184160",
   email: "aimclinic@gmail.com",
 
   address:
-    "Civil Lines, Kanpur Nagar, Uttar Pradesh - 208001",
+    "Civil Lines, Prayagraj , Uttar Pradesh - 211002",
 
   emergency:
     "9506012020",
@@ -97,16 +97,16 @@ const clinicData = {
       qualification: "MBBS, MD",
       specialization: "General Physician",
       experience: "12+ Years Experience",
-      image: "/doctor1.jpg"
+      image: "/dr1.jpg"
     },
 
     {
       id: 2,
-      name: "Dr. Priya Sharma",
+      name: "Dr. Naitik Sharma",
       qualification: "MBBS, MS",
       specialization: "Women's Health",
       experience: "10+ Years Experience",
-      image: "/doctor2.jpg"
+      image: "/dr2.jpg"
     },
 
     {
@@ -115,7 +115,7 @@ const clinicData = {
       qualification: "MBBS, MD",
       specialization: "Pediatrician",
       experience: "8+ Years Experience",
-      image: "/doctor3.jpg"
+      image: "/dr3.jpg"
     }
   ],
 

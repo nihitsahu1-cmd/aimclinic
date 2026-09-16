@@ -34,13 +34,15 @@ function Doctors() {
               key={doctor.id}
             >
 
-              <div className="doctor-card h-100 slide-up">
-
+               <div className="doctor-card h-[250px] slide-up">
                 {/* Doctor Image */}
                 <div className="doctor-image">
 
                   <img
-                    src={doctor.image.startsWith("/") && doctor.image !== "/doctor1.jpg" && doctor.image !== "/doctor2.jpg" && doctor.image !== "/doctor3.jpg" ? doctor.image : `/hero${doctor.id}.jpg`}
+                    src={doctor.image.startsWith("/") 
+                      && doctor.image !== "/doctor1.jpg"
+                       && doctor.image !== "/doctor2.jpg" 
+                       && doctor.image !== "/doctor3.jpg" ? doctor.image : `/hero${doctor.id}.jpg`}
                     alt={doctor.name}
                     className="img-fluid"
                   />

@@ -11,7 +11,23 @@ function Footer() {
         </div>
         <div className="footer-contact mt-4 pt-4"><span><i className="bi bi-geo-alt-fill me-2"></i>{clinicData.address}</span><a href={`tel:${clinicData.phone}`}><i className="bi bi-telephone-fill me-2"></i>{clinicData.phone}</a><a href={`mailto:${clinicData.email}`}><i className="bi bi-envelope-fill me-2"></i>{clinicData.email}</a></div>
       </div>
-      <div className="footer-bottom"><div className="container py-3"><small>© 2026 {clinicData.clinicName}. All Rights Reserved.</small></div></div>
+<div className="footer-bottom">
+  <div className="container py-3">
+    <div className="d-flex justify-content-between align-items-center">
+      
+      <small>
+        © 2026 {clinicData.clinicName}. All Rights Reserved.
+      </small>
+
+      <small>
+        Developed by <strong>Pinweb Pvt Ltd</strong>
+      </small>
+
+    </div>
+  </div>
+</div>
+
+
     </footer>
   );
 }
