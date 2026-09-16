@@ -25,7 +25,7 @@ function Hero() {
               all in one comfortable clinic close to you.
             </p>
 
-            <div className="mt-4">
+            <div className="hero-actions mt-4">
 
               <a
                 href="#appointment"

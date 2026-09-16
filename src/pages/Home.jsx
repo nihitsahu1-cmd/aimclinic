@@ -16,8 +16,7 @@ function Home({ isDarkMode, onThemeToggle }) {
 
       <Hero />
 
-      <About />
-
+      <About /> 
       <Services />
 
       <WhyChooseUs />
