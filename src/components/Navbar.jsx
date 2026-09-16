@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import clinicData from "../data/clinicData";
 
@@ -41,30 +40,73 @@ function Navbar({ isDarkMode, onThemeToggle }) {
         >
           <ul className="navbar-nav">
 
+            {/* Home */}
             <li className="nav-item">
-              <a className="nav-link" href="#home" onClick={closeMenu}>
+              <a
+                className="nav-link"
+                href="#home"
+                onClick={closeMenu}
+              >
                 Home
               </a>
             </li>
 
+            {/* About */}
             <li className="nav-item">
-              <a className="nav-link" href="#about" onClick={closeMenu}>
+              <a
+                className="nav-link"
+                href="#about"
+                onClick={closeMenu}
+              >
                 About
               </a>
             </li>
 
+            {/* Services */}
             <li className="nav-item">
-              <a className="nav-link" href="#services" onClick={closeMenu}>
+              <a
+                className="nav-link"
+                href="#services"
+                onClick={closeMenu}
+              >
                 Services
               </a>
             </li>
 
+            {/* Doctors */}
             <li className="nav-item">
-              <a className="nav-link" href="#doctors" onClick={closeMenu}>
+              <a
+                className="nav-link"
+                href="#doctors"
+                onClick={closeMenu}
+              >
                 Doctors
               </a>
             </li>
 
+            {/* Facilities */}
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#facilities"
+                onClick={closeMenu}
+              >
+                Facilities
+              </a>
+            </li>
+
+            {/* Gallery */}
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                href="#gallery"
+                onClick={closeMenu}
+              >
+                Gallery
+              </a>
+            </li>
+
+            {/* Appointment */}
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -75,8 +117,13 @@ function Navbar({ isDarkMode, onThemeToggle }) {
               </a>
             </li>
 
+            {/* Contact */}
             <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={closeMenu}>
+              <a
+                className="nav-link"
+                href="#contact"
+                onClick={closeMenu}
+              >
                 Contact
               </a>
             </li>
@@ -86,7 +133,7 @@ function Navbar({ isDarkMode, onThemeToggle }) {
           {/* Buttons */}
           <div className="navbar-actions">
 
-            {/* Theme */}
+            {/* Theme Toggle */}
             <button
               type="button"
               className="btn theme-toggle"
@@ -96,6 +143,7 @@ function Navbar({ isDarkMode, onThemeToggle }) {
                   ? "Switch to day mode"
                   : "Switch to night mode"
               }
+              aria-label="Toggle theme"
             >
               <i
                 className={`bi ${
@@ -106,7 +154,7 @@ function Navbar({ isDarkMode, onThemeToggle }) {
               ></i>
             </button>
 
-            {/* Call */}
+            {/* Call Button */}
             <a
               href={`tel:${clinicData.phone}`}
               className="btn btn-primary"
@@ -124,3 +172,4 @@ function Navbar({ isDarkMode, onThemeToggle }) {
 }
 
 export default Navbar;
+

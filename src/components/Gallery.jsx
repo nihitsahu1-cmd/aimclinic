@@ -1,12 +1,11 @@
-
 function Gallery() {
   const galleryItems = [
-    ["Campus", "/campus.jpg"],
-    ["Classroom", "classroom.jpg"],
-    ["Library", "library.jpg"],
-    ["Laboratory", "practical.jpg"],
-    ["Students", "students.jpg"],
-    ["Campus Activities", "playground.jpg"],
+    "/gallery1.jpg",
+    "/gallery2.jpg",
+    "/gallery3.jpg",
+    "/gallery4.jpg",
+    "/gallery5.jpg",
+    "/gallery.jpg",
   ];
 
   return (
@@ -14,59 +13,37 @@ function Gallery() {
       <div className="container">
 
         {/* Section Heading */}
-        <div className="d-flex justify-content-between align-items-end section-heading">
+        <div className="section-heading text-center mb-5">
+          <p className="section-kicker">
+            CLINIC GALLERY
+          </p>
 
-          <div>
-            <p className="section-kicker">
-              CAMPUS MOMENTS
-            </p>
+          <h2 className="section-title">
+            A look inside AIM Multispeciality Clinic
+          </h2>
 
-            <h2 className="section-title">
-              Life at Dr. Dharmendra Singh B.S Mahavidyalaya
-            </h2>
-          </div>
-
-          <span className="text-muted d-none d-md-block">
-            Learning, friendship, and memories.
-          </span>
-
+          <p className="text-muted">
+            Care, comfort, and a welcoming environment.
+          </p>
         </div>
-
 
         {/* Gallery */}
         <div className="row g-3">
-
-          {galleryItems.map(([title, image]) => (
-
+          {galleryItems.map((image, index) => (
             <div
               className="col-6 col-lg-4"
-              key={title}
+              key={index}
             >
-
               <div className="gallery-item">
-
-                {/* Gallery Image */}
                 <img
                   src={image}
-                  alt={title}
+                  alt={`AIM Multispeciality Clinic ${index + 1}`}
                   className="img-fluid"
+                  loading="lazy"
                 />
-
-                {/* Image Overlay */}
-                <div>
-                  <span>
-                    {title}
-                  </span>
-
-                  <i className="bi bi-plus-lg"></i>
-                </div>
-
               </div>
-
             </div>
-
           ))}
-
         </div>
 
       </div>
@@ -75,4 +52,3 @@ function Gallery() {
 }
 
 export default Gallery;
-

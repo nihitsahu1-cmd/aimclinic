@@ -8,6 +8,7 @@ import Facilities from "../components/Facilities";
 import Appointment from "../components/Appointment";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
 
 function Home({ isDarkMode, onThemeToggle }) {
   return (
@@ -24,6 +25,7 @@ function Home({ isDarkMode, onThemeToggle }) {
       <Doctors />
 
       <Facilities />
+      <Gallery />
 
       <Appointment />
 

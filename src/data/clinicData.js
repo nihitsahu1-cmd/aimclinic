@@ -6,15 +6,15 @@ const clinicData = {
     "AIM Multispeciality Clinic provides quality healthcare with experienced doctors, modern facilities and patient-focused care.",
 
   // Contact Information
-  phone: "7266903708",
-  alternatePhone: "6387184160",
+  phone: "+91 7266903708",
+  alternatePhone: "+91 6387184160",
   email: "aimclinic@gmail.com",
 
   address:
     "Civil Lines, Prayagraj , Uttar Pradesh - 211002",
 
   emergency:
-    "9506012020",
+    "+91 7266903708",
 
   // Timing
   timings: {
@@ -291,4 +291,12 @@ const clinicData = {
   ]
 };
 
+const facilityImages = [
+  "/digital.jpg",
+  "emergency.jpg",
+  "modern2.jpg",
+  "modern.jpg",
+];
+
 export default clinicData;
+

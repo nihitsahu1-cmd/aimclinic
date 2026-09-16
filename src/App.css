@@ -94,10 +94,14 @@ body { margin: 0; background: var(--clinic-bg); color: var(--clinic-ink); font-f
     flex: 0 0 auto;
   }
 
+
+
   .navbar-actions .btn-primary {
     flex: 1;
   }
 }
+
+
 
 /* Desktop */
 @media (min-width: 992px) {
@@ -105,4 +109,77 @@ body { margin: 0; background: var(--clinic-bg); color: var(--clinic-ink); font-f
   .navbar-toggler {
     display: none;
   }
+}
+
+
+.facility-card {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.facility-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.facility-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.facility-card:hover .facility-image img {
+  transform: scale(1.05);
+}
+
+.facility-content {
+  padding: 24px;
+}
+
+.facility-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.facility-icon i {
+  font-size: 22px;
+}
+
+.facility-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
 }
