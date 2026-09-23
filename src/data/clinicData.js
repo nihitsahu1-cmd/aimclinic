@@ -152,7 +152,7 @@ const clinicData = {
       description:
         "Easy online appointment and patient support."
     }
-  ],
+  ], 
 
   // Statistics
   stats: [

@@ -9,6 +9,7 @@ import Appointment from "../components/Appointment";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
+import FloatingActions from "../components/FloatingActions";
 
 function Home({ isDarkMode, onThemeToggle }) {
   return (
@@ -32,6 +33,8 @@ function Home({ isDarkMode, onThemeToggle }) {
       <Contact />
 
       <Footer />
+
+      <FloatingActions />
     </>
   );
 }
