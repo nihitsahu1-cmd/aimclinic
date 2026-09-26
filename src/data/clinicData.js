@@ -102,7 +102,7 @@ const clinicData = {
 
     {
       id: 2,
-      name: "Dr. Naitik Sharma",
+      name: "Dr. Ragini gupta",
       qualification: "MBBS, MS",
       specialization: "Women's Health",
       experience: "10+ Years Experience",

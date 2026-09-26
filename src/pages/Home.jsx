@@ -6,6 +6,7 @@ import Doctors from "../components/Doctors";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Facilities from "../components/Facilities";
 import Appointment from "../components/Appointment";
+import Review from "../components/Review";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery";
@@ -29,6 +30,8 @@ function Home({ isDarkMode, onThemeToggle }) {
       <Gallery />
 
       <Appointment />
+
+      <Review />
 
       <Contact />
 

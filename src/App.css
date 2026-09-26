@@ -742,3 +742,316 @@ body { margin: 0; background: var(--clinic-bg); color: var(--clinic-ink); font-f
     margin-top: 14px;
   }
 }
+
+
+/* =========================================
+   HERO IMAGE - LARGE & RESPONSIVE
+========================================= */
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.hero-image-box {
+  position: relative;
+  width: min(100%, 560px);
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.hero-image {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+
+  border-radius: 32px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.16),
+    0 10px 25px rgba(0, 0, 0, 0.08);
+
+  border: 6px solid rgba(255, 255, 255, 0.85);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.hero-image-box:hover .hero-image {
+  transform: scale(1.015);
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.20),
+    0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================
+   DECORATIVE CIRCLES
+========================================= */
+
+.hero-circle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.circle-one {
+  width: 180px;
+  height: 180px;
+  top: -35px;
+  right: -35px;
+  background: rgba(13, 110, 253, 0.12);
+}
+
+.circle-two {
+  width: 120px;
+  height: 120px;
+  bottom: -30px;
+  left: -30px;
+  background: rgba(25, 135, 84, 0.12);
+}
+
+
+/* =========================================
+   TRUST CARD
+========================================= */
+
+.hero-trust-card {
+  position: absolute;
+  left: -35px;
+  bottom: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 18px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+
+  text-align: left;
+
+  z-index: 5;
+
+  backdrop-filter: blur(10px);
+
+  animation: floatingCard 4s ease-in-out infinite;
+}
+
+.trust-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #0d6efd;
+  color: #fff;
+
+  font-size: 20px;
+}
+
+.hero-trust-card strong,
+.hero-experience-card strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero-trust-card small,
+.hero-experience-card small {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: #6c757d;
+}
+
+
+/* =========================================
+   EXPERIENCE CARD
+========================================= */
+
+.hero-experience-card {
+  position: absolute;
+  right: -25px;
+  top: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 13px 16px;
+
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13);
+
+  text-align: left;
+
+  z-index: 5;
+
+  backdrop-filter: blur(10px);
+
+  animation: floatingCard 4s ease-in-out infinite reverse;
+}
+
+.hero-experience-card > i {
+  font-size: 22px;
+  color: #f0ad4e;
+}
+
+
+/* =========================================
+   FLOATING ANIMATION
+========================================= */
+
+@keyframes floatingCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+  .hero-image-box {
+    width: min(100%, 600px);
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+
+  .hero-trust-card {
+    left: 10px;
+  }
+
+  .hero-experience-card {
+    right: 10px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+  .hero-media {
+    margin-top: 45px !important;
+  }
+
+  .hero-visual {
+    padding: 10px 5px;
+  }
+
+  .hero-image-box {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .hero-image {
+    height: 430px;
+    border-radius: 24px;
+    border-width: 4px;
+  }
+
+  .hero-trust-card {
+    left: 5px;
+    bottom: 25px;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .hero-experience-card {
+    right: 5px;
+    top: 25px;
+    padding: 10px 12px;
+    gap: 7px;
+  }
+
+  .trust-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 17px;
+  }
+
+  .hero-trust-card strong,
+  .hero-experience-card strong {
+    font-size: 12px;
+  }
+
+  .hero-trust-card small,
+  .hero-experience-card small {
+    font-size: 9px;
+  }
+
+  .hero-experience-card > i {
+    font-size: 18px;
+  }
+
+  .circle-one {
+    width: 110px;
+    height: 110px;
+    right: -10px;
+    top: -20px;
+  }
+
+  .circle-two {
+    width: 80px;
+    height: 80px;
+    left: -10px;
+    bottom: -15px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .hero-image {
+    height: 360px;
+    border-radius: 20px;
+  }
+
+  .hero-trust-card {
+    left: 0;
+    bottom: 15px;
+  }
+
+  .hero-experience-card {
+    right: 0;
+    top: 15px;
+  }
+
+}

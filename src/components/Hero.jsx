@@ -69,8 +69,9 @@ function Hero() {
               <div className="hero-circle circle-two"></div>
 
               <div className="hero-image-box slide-up">
+
                 <img
-                  src="/patient1.jpg"
+                  src="/hero.jpg"
                   alt="Doctor providing a patient consultation"
                   className="hero-image"
                 />
@@ -90,11 +91,13 @@ function Hero() {
                 {/* Experience Card */}
                 <div className="hero-experience-card">
                   <i className="bi bi-award-fill"></i>
+
                   <div>
                     <strong>Quality Care</strong>
                     <small>For every patient</small>
                   </div>
                 </div>
+
               </div>
             </div>
 
